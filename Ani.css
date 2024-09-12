@@ -1,0 +1,59 @@
+table {
+    text-align: center;
+    border-collapse: collapse;
+    height: 600px
+}
+
+
+.box td img {
+
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count:1;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+
+@keyframes rotate {
+    10% {
+        transform: translateX(200px) rotate(360deg);
+    }
+
+}
+
+.boxA td img {
+    animation-name: rotateimg;
+    animation-duration: 7s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 1;
+
+
+
+}
+
+@keyframes rotateimg {
+    60% {
+        border-radius: 30px;
+        transform: translateX(-300px) rotate(360deg)
+    }
+
+
+}
+
+.boxB td img {
+    animation-name: rollImg;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+
+}
+
+@keyframes rollImg {
+    40% {
+        transform: translatey(300px) rotate(200deg);}
+    }
